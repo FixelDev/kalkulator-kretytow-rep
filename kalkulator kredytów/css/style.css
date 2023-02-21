@@ -1,0 +1,661 @@
+html, body, main
+{
+    height: 100%;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1
+{
+    margin: 0;
+}
+
+header
+{
+    height: 20%;
+    background-color: #74a3ffff;
+    background-image: linear-gradient(#74a3ffff, rgb(86, 131, 220));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo
+{
+    width: 100%;
+    height: 100%;
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url('../images/logo.png');
+    background-size: 40%;
+    animation-name: logoWejscie;
+    animation-duration: 0.7s;
+}
+
+@keyframes logoWejscie 
+{
+    from{opacity: 0; width: 85%;}
+    to{opacity: 1 ; width: 100%;}
+}
+
+nav
+{
+    height: 7%;
+    background-color: #d44b83ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 85%;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 20px;
+    background-color: transparent;
+    border-right-style: solid;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    color: white;
+    border-color: rgb(248, 134, 182);
+    transition: background-color 0.3s, color 0.3s;  
+    text-decoration: none; 
+}
+
+nav a:hover
+{
+    cursor: pointer;
+    background-color: white;
+    color: #d44b83ff;
+}
+
+nav a:active
+{
+    cursor: pointer;
+    background-color: white;
+    color: #d44b83ff;
+}
+
+
+article
+{
+    
+    background-color: #d5edffff;
+}
+
+#artykulGlowna
+{
+    height: 190%;
+}
+
+#artykulWspolprace
+{
+    height: 115%;
+}
+
+#artykulKontakt
+{
+    height: 80%;
+}
+
+#artykulSlownik
+{
+    height: 90%;
+}
+
+.sekcja
+{
+    padding: 2%;
+    border-radius: 15px;
+    float:left;
+    width: 30%;      
+    margin-top: 5%;
+    box-shadow: 10px 10px 5px grey;
+}
+
+#sekcja1
+{    
+    background-color: white;
+    background:linear-gradient(to bottom, #74a3ffff 0%, #74a3ffff 95px, white 95px);
+    margin-left: 7%;
+    margin-right: 9%;
+    animation-name: sekcjaWejscie;
+    animation-duration: 0.9s;
+}
+
+
+
+@keyframes sekcjaWejscie 
+{
+    from{margin-top: 100px; opacity: 0;}
+    to{margin-top: 5%; opacity: 1;}          
+}
+
+#sekcja2
+{
+    background-color: #74a3ffff;
+    background:linear-gradient(to bottom, #d44b83ff 0%, #d44b83ff 95px, #74a3ffff 95px);
+    margin-left: 9%;
+    margin-right: 7%;
+    animation-play-state: paused;
+    animation-name: sekcjaWejscie;
+    animation-duration: 1s;
+    display: none;
+}
+
+footer
+{
+    clear: both;
+    height: 10%;
+    text-align: center;
+    background-color: #74a3ffff;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#blokNadplatyKredytu
+{
+    display: none;
+}   
+
+#kalkulator
+{
+    text-align: center;
+}
+
+.legenda
+{
+    text-align: center;
+    font-size: 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;   
+    color: white; 
+}
+
+#kalkulator input
+{
+    text-align: center;
+}
+
+#podsumowanie 
+{
+    color: white;
+}
+
+#podsumowanie input
+{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: white;
+    font-size: 30px;
+    margin-top: 20px;
+    width: 300px;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button 
+{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.inputNumberText
+{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+input[type=number] 
+{
+    -moz-appearance: textfield;     
+    width: 40%;
+} 
+
+input[type=number]:focus
+{
+    outline: none;
+}   
+
+input[type=text] 
+{
+    width: 17%;
+} 
+
+
+#kalkulator label
+{
+    font-size: 20px;
+}
+
+.zmienKwotePrzycisk
+{
+    border-radius: 50%;
+    border: solid;
+    border-width: 2px;
+    border-color: #74a3ffff;
+    color: #74a3ffff;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    background-color: transparent;
+    line-height: 17px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.zmienKwotePrzycisk:hover
+{
+    cursor: pointer;
+    background-color: #74a3ffff;
+    color: white;   
+}
+
+.opcja
+{
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+input[type=range] 
+{
+    -webkit-appearance: none; 
+    margin-top: 20px;
+    width: 200px; 
+    background: transparent; 
+}
+
+input[type=range]::-webkit-slider-thumb 
+{
+    -webkit-appearance: none;
+}
+
+input[type=range]:focus 
+{
+    outline: none; 
+}
+
+input[type=range]::-ms-track 
+{
+    width: 200px; 
+    background: transparent; 
+    border-color: transparent;
+    color: transparent;
+}
+
+input[type=range]::-webkit-slider-thumb 
+{
+    -webkit-appearance: none;
+    height: 25px;
+    width:  25px;
+    border-radius: 50%;
+    background: #74a3ffff;
+    cursor: pointer;
+    margin-top: -9px;
+    background-image: url('../images/strzalki.png');
+    background-size: 15px;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+}
+
+input[type=range]::-webkit-slider-runnable-track 
+{
+    width: 200px; 
+    height: 8.4px;
+    background: #d5edffff;
+    border-radius: 1.3px;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track 
+{
+    background: #d5edffff;
+}
+
+input[type=range]::-moz-range-track 
+{
+    width: 200px; 
+    height: 8.4px;
+    background: #d5edffff;
+    border-radius: 1.3px;
+}
+
+input[type=range]::-ms-track 
+{
+    width: 200px;
+    height: 8.4px;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+input[type=range]::-ms-fill-lower 
+{
+    background: #d5edffff;
+    border-radius: 2.6px;
+}
+
+input[type=range]:focus::-ms-fill-lower 
+{
+    background: #d5edffff;
+}
+
+input[type=range]::-ms-fill-upper 
+{
+    background: #d5edffff;
+    border-radius: 2.6px;
+}
+
+input[type=range]:focus::-ms-fill-upper 
+{
+    background: #d5edffff;
+}
+
+#dataSplaty
+{
+    cursor: pointer;
+}
+
+.checkbox 
+{
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;   
+    padding-bottom: 30px;
+    width: 0;
+    height: 0;
+}
+
+.checkbox input 
+{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    display: none;
+    height: 0;
+    width: 0;
+}
+
+.checkmark 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 35px;
+    width: 190px;
+    background-color: transparent;
+    border-color: #74a3ffff;
+    color: #74a3ffff;
+    padding-top: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}      
+
+.checkbox:hover input ~ .checkmark 
+{
+    background-color: #74a3ffff;
+    color: white;
+    box-shadow: 2px 2px 8px rgb(102, 128, 181);
+}
+
+.checkbox input:checked ~ .checkmark 
+{
+    background-color: #74a3ffff;
+    color: white;
+    box-shadow: 2px 2px 8px rgb(102, 128, 181);
+}
+
+.przyciskOblicz
+{
+    border-radius: 10px;
+    border: solid;
+    border-width: 2px;
+    border-color: #d44b83ff;
+    color: #d44b83ff;
+    font-size: 20px;
+    background-color: transparent;
+    padding: 10px;
+    width: 170px;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.przyciskOblicz:hover
+{
+    cursor: pointer;
+    background-color: #d44b83ff;
+    color: white;
+    box-shadow: 2px 2px 8px rgb(163, 71, 110);
+}
+
+select
+{
+    margin-top: 10px;
+    width: 70px;
+    height: 30px;
+    outline: none;
+    border-color: white;
+    border-width: 2px;
+    border-radius: 4px;
+    color:white;
+    background-color: #74a3ffff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+select:hover
+{
+    cursor: pointer;
+    background-color: white;
+    color: #74a3ffff;  
+}
+
+#typNadplatyContainer
+{
+    margin-top: 30px;        
+    text-align: left;
+}
+
+.kartaContainer
+{
+    width: 33.3%;
+    height: 410px;
+    float:left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.karta
+{
+    width: 90%;
+    height: 70%;
+    background-color: white;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    border-radius: 20px;
+    
+    transition: width 0.7s, height 0.7s, box-shadow 0.7s;
+    animation-name: kartaWejscie;
+    animation-duration: 0.7s;
+}
+
+.karta:hover
+{
+    width: 95%;
+    height: 75%;
+    box-shadow: 10px 10px 5px grey;
+}
+
+@keyframes kartaWejscie
+{
+    from{width: 80%; height: 60%; opacity: 0;}
+    to{width: 90%; height: 70%; opacity: 1;}
+}
+
+.slownik
+{
+    padding: 7px;
+    height: 50px;
+    width: 175px;
+    background-color: white;
+    color: #74a3ffff;
+    border-radius: 20px;
+    animation-name: slownikWejscie;
+    animation-duration: 0.7s;
+    transition: width 0.7s, height 0.7s, box-shadow 0.7s, background-color 0.7s, color 0.7s, font-size 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 20px;
+    float:left;
+    margin: 20px;
+}
+
+@keyframes slownikWejscie 
+{
+    from{width: 120px; height: 20px; font-size: 1px; opacity: 0;}
+    to{width: 175px; height:  50px; font-size: 20px; opacity: 1;}
+}
+
+.clear
+{
+    clear: both;
+}
+
+.slownik:hover
+{
+    background-color: #74a3ffff;
+    color: white;
+    width: 500px;
+    height: 300px;
+    box-shadow: 10px 10px 5px grey;
+    font-size: 30px;
+}
+
+.slownik .tekst
+{
+    font-size: 0px;
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+    transition: opacity 0.7s, font-size 0.7s, width 0.7s, height 0.7s;
+    overflow-wrap: break-word;
+}
+
+.slownik:hover .tekst
+{
+    font-size: 22px;
+    width: 500px;
+    height: 300px;
+    opacity: 1;
+}
+
+
+.kontakt
+{
+    color:#74a3ffff;
+    text-align: center;
+    font-size: 20px;
+    transition: background-color 0.7s, width 0.7s, height 0.7s, box-shadow 0.7s, color 0.7s;
+    padding-top: 20px;
+}
+
+.kontakt:hover
+{
+    background-color: #74a3ffff;
+    color:white;
+}
+
+.kurs
+{
+    padding: 10px;
+    color:#74a3ffff;
+    text-align: lfet;
+    transition: background-color 0.7s, width 0.7s, height 0.7s, box-shadow 0.7s, color 0.7s;
+}
+
+.kurs:hover
+{
+    background-color: #74a3ffff;
+    color:white;
+}
+
+
+.kontakt i 
+{
+    font-size: 80px;
+}
+
+.karta p
+{
+    font-size: 20px;
+}
+
+#wzrost
+{
+    color: rgb(19, 177, 122);
+}
+
+#spadek
+{
+    color: #d44b83ff
+}
+
+#symbol
+{
+    margin-top: 30px;
+}
+
+#mbank
+{
+    background-image: url('../images/mbank.png');
+}
+
+#pko
+{
+    background-image: url('../images/pko.png');
+}
+
+#pekao
+{
+    background-image: url('../images/pekao.png');
+}
+
+#alior
+{
+    background-image: url('../images/alior.png');
+}
+
+#ing
+{
+    background-image: url('../images/ing.png');
+}
+
+#credit
+{
+    background-image: url('../images/credit.png');
+}
+
